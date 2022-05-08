@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div id="content">
+
+    <h1>Хотите связаться с нами?</h1>
+
+    <p>Текст какой-нибудь.</p>
+    <div class="cleaner_h40"></div>
+
+    <div class="two_column float_l">
+
+        <h6>Наш адрес</h6>
+        г. Уфа, <br />
+        УГАТУ, ВМиК<br />
+        6-416<br />
+        <strong>Email:</strong> <a href="#">molitva.com</a>
+    </div>
+
+    <div class="cleaner_h50"></div>
+
+    <div id="contact_form">
+
+        <h2>Заполните форму</h2>
+
+        <form method="post" name="contact" action="#">
+
+            <input type="hidden" name="post" value="Send" />
+            <label for="author">Имя:</label> <input type="text" id="author" name="author" class="required input_field" />
+            <div class="cleaner_h10"></div>
+
+            <label for="email">Email:</label> <input type="text" id="email" name="email" class="validate-email required input_field" />
+            <div class="cleaner_h10"></div>
+
+            <label for="url">Область работы:</label> <input type="text" name="subject" id="subject" class="input_field" />
+            <div class="cleaner_h10"></div>
+
+            <label for="text">Сообщение:</label> <textarea id="text" name="text" rows="0" cols="0" class="required"></textarea>
+            <div class="cleaner_h10"></div>
+
+            <input style="font-weight: bold;" type="submit" class="submit_btn" name="submit" id="submit" value=" Send " />
+            <input style="font-weight: bold;" type="reset" class="submit_btn" name="reset" id="reset" value=" Reset " />
+            <input style="font-weight: bold;" type="button" class="submit_btn" name="get" id="get" value=" Get " />
+            <aside>
+                <h2>Статус вашего запроса</h2>
+                <p id="statusfield"></p>
+            </aside>
+        </form>
+
+    </div>
+
+    <div id="request">
+        <h2>Ваши запросы</h2>
+        <p id="postreq"></p>
+    </div>
+
+
+</div> <!-- end of templatemo_content -->
+
+<script type="text/javascript" src="/static/javascripts/formsend.js"></script>
+<script type="text/javascript" src="/static/javascripts/previous_requests.js"></script>
+
+{% endblock %}

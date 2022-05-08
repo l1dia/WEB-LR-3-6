@@ -1,0 +1,67 @@
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>MOlitva</title>
+	<link href="/static/stylesheets/styles.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<div id="site_title">
+				<a href="index.html"><img src="static/images/MOlitva.png" alt="World Template" /><span>решаем математику и делаем мемы</span></a>
+			</div> <!-- end of site_title -->
+		</header> <!-- end of templatemo_header -->
+		<main>
+			<div id="sidebar">
+				{% if navmenu %}
+				<div id="menu">
+					<ul>
+						{% for item in navmenu %}
+						<li><a href="{{item.addr}}">{{item.name}}</a></li>
+						{% endfor %}
+					</ul>
+				</div>
+				<div class="sidebar_box">
+
+					<h3>Новости</h3>
+
+					<div class="news_box">
+						<a href="http://www.templatemo.com/page/1" target="_parent"><img src="static/images/templatemo_image_01.jpg" alt="image 1" /></a>
+						<p><a href="#">Богданов Марат Робертович представил миру первую в мире нейронку для ЭКГ</a></p>
+
+						<div class="cleaner"></div>
+					</div>
+
+					<div class="news_box">
+						<a href="http://www.templatemo.com/page/2" target="_parent"><img src="static/images/templatemo_image_02.jpg" alt="image 2" /></a>
+						<p><a href="#">Мансур Нагимович выиграл чемпионат НБА</a></p>
+
+						<div class="cleaner"></div>
+					</div>
+
+					<div class="news_box">
+						<a href="http://www.templatemo.com/page/3" target="_parent"><img src="static/images/templatemo_image_03.jpg" alt="image 3" /></a>
+						<p><a href="#">Буфет 6-го корпуса может снова заработать!!!!</a></p>
+
+						<div class="cleaner"></div>
+					</div>
+				</div>
+			</div>
+			{% endif %}
+
+			{% block content %}{% endblock %}
+			<div class="cleaner"></div>
+		</main>
+
+		<div class="cleaner"></div>
+		<footer>
+			Copyright © 2048 <a href="#">MOlitva</a> |
+			Designed by <a href="http://www.templatemo.com" target="_parent">rotmeeer</a>
+		</footer> <!-- end of templatemo_footer -->
+		<script type="text/javascript" src="/static/javascripts/first.js"></script>
+	</div>
+
+</body>
+</html>

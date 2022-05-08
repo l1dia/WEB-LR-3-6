@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\labapp",
+    "\\labapp\\static",
+    "\\labapp\\static\\javascripts",
+    "\\labapp\\static\\stylesheets",
+    "\\labapp\\templates"
+  ],
+  "SelectedNode": "\\labapp\\routes.py",
+  "PreviewInSolutionExplorer": false
+}

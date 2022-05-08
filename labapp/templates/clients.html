@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div id="content">
+
+    <h1>Наши работы</h1>
+
+    <div id="gallery">
+        <ul>
+            {% for image in imgs %}
+            <li>
+                <a href="images/gallery/image_01_b.jpg" class="pirobox" title="Project 1"><img src="static/images/gallery/{{image}}" alt="1" /></a>
+                <div class="button"><a href="#">Перейти</a></div>
+            </li>
+            {% endfor %}
+        </ul>
+
+        <div class="cleaner"></div>
+    </div>
+
+</div> <!-- end of templatemo_content -->
+
+<script type="text/javascript" src="/static/javascripts/formsend.js"></script>
+
+{% endblock %}
